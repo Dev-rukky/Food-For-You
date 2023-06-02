@@ -19,6 +19,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    position: relative;
 }
 
 .nav-padding {
@@ -77,6 +78,118 @@ header {
     justify-content: space-between;
 }
 
+.banner {
+    position: relative;
+}
+
+.banner-text h2 {
+    font-family: 'Gabelisa';
+    font-size: 40px;
+}
+
+.banner-text h1 {
+    font-family: var(--heading-font-family);
+    font-size: 80px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.banner-text p {
+    font-size: 20px;
+    font-family: var(--p-font-family);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.happy-text p {
+    font-family: var(--heading-font-family);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.happy-maths p {
+    font-family: var(--heading-font-family);
+    font-size: 44px;
+    font-weight: 300;
+}
+
+.banner-text a {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    border: 1px solid black;
+    color: black;
+    font-family: var(--p-font-family);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.span {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 2px;
+    width: 100%;
+}
+
+.happy {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0px;
+    z-index: 1000;
+    row-gap: 1rem;
+}
+
+.banner-content img {
+    width: 40%;
+    z-index: 999;
+    max-width: 490px;
+}
+
+.banner-content {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 3rem;
+}
+
+.half {
+    width: 15%;
+    position: absolute;
+    top: 70%;
+}
+
+.leaf {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+
+.leaf2 {
+    position: absolute;
+    right: 2%;
+    bottom: 10%;
+}
+
+.tomato {
+    position: absolute;
+    bottom: 0%;
+    left: 40%;
+    transform: translate(50%, -50%);
+}
+
+.pasta {
+    position: absolute;
+    top: 10%;
+    right: 40%;
+    transform: translate(-50%, 50%);
+}
 
 @media only screen and (max-width: 1024px) {}
 
@@ -101,6 +214,26 @@ header {
 
     .nav-links a {
         font-size: 12px;
+    }
+
+    .leaf,
+    .leaf2,
+    .half,
+    .pasta,
+    .tomato {
+        display: none;
+    }
+
+    .banner-text h1 {
+        font-size: 50px;
+    }
+
+    .banner-text h2 {
+        font-size: 30px;
+    }
+
+    .banner-text p {
+        font-size: 16px;
     }
 }
 
